@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\plugins",
+    "\\test"
   ],
-  "SelectedNode": "\\sb.ini",
+  "SelectedNode": "\\plugins\\WriteSb.py",
   "PreviewInSolutionExplorer": false
 }

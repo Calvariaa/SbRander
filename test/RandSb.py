@@ -2,7 +2,7 @@ import os
 import sqlite3
 import random
 
-conn = sqlite3.connect("sb.db")
+conn = sqlite3.connect(os.getcwd() + "\sb.db",check_same_thread = False)
 c = conn.cursor()
 
 
