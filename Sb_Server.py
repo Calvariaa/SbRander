@@ -22,7 +22,11 @@ def Search_Sb():
     elif 'write' in params :
         w_str = params['write']
         print(w_str)
-        return WriteSb.write(w_str)
+        if w_str is None :
+            return 'Null'
+        if not w_str is None :
+            print(w_str)
+            return WriteSb.write(w_str)
  
  
 if __name__ == '__main__':
