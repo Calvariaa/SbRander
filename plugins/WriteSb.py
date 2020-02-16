@@ -4,15 +4,14 @@ import sqlite3
 conn = sqlite3.connect(os.getcwd() + "\sb.db",check_same_thread = False)
 c = conn.cursor()
 
-#def search(str) :
-if 1 :
+def write(str) :
     try :
-        cursor = c.execute("select * from sensor where order by id desc limit 0,1;");
-
-        count = cursor.fetchall()
-        result = count #输出
+        cursor = c.execute("insert into sba (id,content,info) \
+            values (NULL,'%s','%s') " % (str,'None'));
+        conn.commit()
+        conn.close()
+        result = 'Write ' + str + ' Success'
     except :
-        result = 'caonimabi'
+        result = 'Write ' + str + ' Failed'
 
-    #return result
-    print(result)
+    return result

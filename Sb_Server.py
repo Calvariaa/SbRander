@@ -1,6 +1,7 @@
 import os
 from flask import Flask, request
 from plugins import SearchSb
+from plugins import WriteSb
 
 app = Flask("Search_Sb")
 
@@ -21,7 +22,7 @@ def Search_Sb():
     elif 'write' in params :
         w_str = params['write']
         print(w_str)
-        return 'Read' + w_str + 'Success'
+        return WriteSb.write(w_str)
  
  
 if __name__ == '__main__':

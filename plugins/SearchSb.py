@@ -18,6 +18,6 @@ def search(str) :
         randnum = random.randint(1,num) - 1 #随机到的项数
         result = count[randnum][1] #输出随机到的sb
     except :
-        result = '喔唷，出现了一点点问题'
+        result = '喔唷，出现了一点点问题 \n' + 'Read ' + str + ' Failed'
 
     return result

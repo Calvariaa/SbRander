@@ -19,7 +19,7 @@ while key <= 3000 :
             cont=read_ini("傻逼语录",str(key))
             print(cont)
             c.execute("insert into sba (id,content,info) \
-                values ('%s','%s','%s') " % (key,cont,'None'));
+                values (%d,'%s','%s') " % (key,cont,'None'));
             conn.commit()
         except :
             key += 1
