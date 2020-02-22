@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\plugins",
-    "\\test"
+    "\\plugins"
   ],
-  "SelectedNode": "\\plugins\\SearchSb.py",
+  "SelectedNode": "\\Sb_Server.py",
   "PreviewInSolutionExplorer": false
 }

@@ -5,6 +5,7 @@ import random
 conn = sqlite3.connect(os.getcwd() + "\sb.db",check_same_thread = False)
 c = conn.cursor()
 
+#if True :
 #str = input();
 def search(str) :
     try :
