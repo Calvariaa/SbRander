@@ -13,7 +13,7 @@ def read_ini(inikey,inivaluse):
 conn = sqlite3.connect("sb.db")
 c = conn.cursor()
 key = 1
-while key <= 3000 :
+while key <= 5112 :
     if __name__ == '__main__':
         try :
             cont=read_ini("傻逼语录",str(key))

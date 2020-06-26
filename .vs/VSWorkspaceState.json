@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\plugins"
+    "\\plugins",
+    "\\test"
   ],
-  "SelectedNode": "\\Sb_Server.py",
+  "SelectedNode": "\\Sbini2sql.py",
   "PreviewInSolutionExplorer": false
 }
